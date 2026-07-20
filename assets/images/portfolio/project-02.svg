@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="380" viewBox="0 0 600 380">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#g2)"/>
+  <rect x="0.5" y="0.5" width="599" height="379" fill="none" stroke="rgba(255,255,255,0.08)"/>
+  <g opacity="0.5" font-family="monospace" font-size="12" fill="#A1A1AA">
+    <text x="24" y="32">00:02:12:02</text>
+    <text x="576" y="32" text-anchor="end">4K • 24FPS</text>
+  </g>
+  <g transform="translate(300,190)">
+    <circle r="34" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.5"/>
+    <path d="M -8 -14 L 18 0 L -8 14 Z" fill="#FFFFFF" fill-opacity="0.8"/>
+  </g>
+  <g font-family="'Space Grotesk', sans-serif" fill="#FFFFFF">
+    <text x="24" y="328" font-size="20" letter-spacing="1">SHORT FORM</text>
+    <text x="24" y="352" font-size="13" fill="#A1A1AA" font-family="monospace">Podcast Highlights</text>
+  </g>
+</svg>
