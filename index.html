@@ -219,11 +219,24 @@
         <!--
           To replace a project: swap the image src in assets/images/portfolio/
           and update the data-title / data-desc attributes below.
+
+          To make a thumbnail open a PLAYING VIDEO instead of just a bigger
+          image: put an .mp4 file in assets/videos/ and add a data-video
+          attribute to that button, e.g.:
+
+            <button class="portfolio__item fade-in"
+                    data-title="My Project"
+                    data-desc="Short description"
+                    data-video="assets/videos/my-clip.mp4">
+
+          If data-video is present, the lightbox plays that video (with
+          controls) instead of showing the thumbnail image. If it's left
+          out, clicking the thumbnail just shows the enlarged image.
         -->
         <div class="portfolio__grid" id="portfolioGrid">
 
           <button class="portfolio__item fade-in" data-title="Fashion Brand Reel" data-desc="Instagram Reel edit — pacing, captions and color grade.">
-            <img src="assets/images/portfolio/project-01.jpg" alt="Fashion Brand Reel thumbnail" loading="lazy" width="600" height="520">
+            <img src="assets/images/portfolio/videos/video 01.mp4" alt="Fashion Brand Reel thumbnail" loading="lazy" width="600" height="520">
           </button>
 
           <button class="portfolio__item fade-in" data-title="Podcast Highlights" data-desc="Short-form cutdown package for a weekly podcast.">
@@ -255,6 +268,7 @@
       <button class="lightbox__close" id="lightboxClose" aria-label="Close preview">&times;</button>
       <figure class="lightbox__content">
         <img id="lightboxImg" src="" alt="">
+        <video id="lightboxVideo" controls playsinline hidden></video>
         <figcaption>
           <h3 id="lightboxTitle"></h3>
           <p id="lightboxDesc"></p>
